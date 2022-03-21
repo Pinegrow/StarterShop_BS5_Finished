@@ -1,0 +1,13 @@
+.notice-success-content {
+}
+
+.notice-success-content .button {
+    float: right;
+}
+
+.notice-success-content::after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+

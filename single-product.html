@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-export-as="woocommerce/single-product.php">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Pinegrow Web Editor - Shop Bootstrap v5 Template"/>
+        <meta name="author" content=""/>
+        <title>Pinegrow | Bootstrap Blocks Template</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="blocks.css"/>
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="custom.css"/>
+        <link rel="stylesheet" href="gallery.css"/>
+        <link rel="stylesheet" href="button.css"/>
+        <link rel="stylesheet" href="notice.css"/>
+    </head>
+    <body class="fw-light text-secondary">
+        <nav class="bg-dark navbar navbar-dark navbar-expand-lg py-lg-1" data-pg-collapsed> 
+            <div class="container"> <a class="fw-bold navbar-brand" href="#" target="_pg_blank" cms-site-name>PG Shop</a>
+                <ul class="flex-row ms-auto navbar-nav order-lg-1 ps-2 pe-2"> 
+                    <li class="nav-item"> <a class="nav-link p-2 pb-3 ps-2 pe-2 pt-3" href="#" title="View Cart" wc-view-cart-link wc-view-cart-link-empty="[data-pg-name=&quot;Show if empty&quot;]" wc-view-cart-link-not-empty="[data-pg-name=&quot;Show if not empty&quot;]" wc-view-cart-link-count="[data-pg-name=&quot;Cart Count&quot;]" wc-view-cart-link-count-singular="'(%d)'" wc-view-cart-link-count-plural="'(%d)'"><span data-pg-name="Show if empty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                    </g>
+                                </svg> <span class="small">(0)</span></span><span class="text-warning" data-pg-name="Show if not empty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                    </g>
+                                </svg> <span class="small" data-pg-name="Cart Count">(0)</span></span> </a> 
+                    </li>                     
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown-3"> 
+                    <ul class="ms-auto navbar-nav" cms-menu="primary"> 
+                        <li class="nav-item">
+                            <a class="active nav-link px-lg-3 py-lg-4" aria-current="page" href="#">Home</a>
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">About</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Collection</a> 
+                        </li>
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Shop</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Blog</a> 
+                        </li>                         
+                    </ul>
+                    <ul class="ms-auto navbar-nav"> 
+                        <li class="nav-item"> <a class="nav-link pt-3" href="#" title="Search"><form _lpchecked="1" wc-search wc-search-template="use"> 
+                                    <div class="input-group">
+                                        <input type="text" class="border-end-0 form-control p-2" placeholder="Search" aria-label="Enter Keyword" aria-describedby="keyword-input"/><span class="bg-white input-group-text p-0" id="keyword-input"><button class="align-items-center btn d-inline-flex h-100" type="submit" id="button-addon1" aria-label="Search">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+                                                    <g>
+                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                        <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>
+                                                    </g>
+                                                </svg>
+                                            </button></span>
+                                    </div>                                     
+                                </form></a> 
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </div>             
+        </nav>
+        <main wp-site-content>
+            <div class=" mt-5 product text-secondary" wc-product wc-product-before="[data-pg-name=&quot;Before Summary&quot;]" wc-product-summary="[data-pg-name=&quot;Summary&quot;]" wc-product-after="[data-pg-name=&quot;Summary&quot;]" wc-product-mode="freestyle">
+                <div class=" container pb-5 pt-2">
+                    <div class="gx-lg-5 gy-4 mb-5 row">
+                        <div class="col-md" data-pg-name="Before Summary">
+                            <div class="position-relative">
+                                <section wc-product-gallery wc-product-gallery-wrapper="[data-pg-name=&quot;Gallery Wrapper&quot;]" wc-product-gallery-main-item="[data-pg-name=&quot;Main image&quot;]" data-pg-collapsed>
+                                    <div data-pg-name="Gallery Wrapper">
+                                        <div data-pg-name="Main image">
+                                            <a><img src="https://images.unsplash.com/photo-1618677603544-51162346e165?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDU3fHxzaGlydHxlbnwwfHx8fDE2NDA1MDgxMjk&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=800&fit=crop" class="d-block img-fluid w-100" alt="..." width="600" height="900"/></a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="bg-danger fs-4 fw-bold pb-2 pe-3 position-absolute ps-3 pt-2 rounded-end text-white" style="top: 50px; left: 0;" wc-product-sale wc-product-sale-amount-sel="span">Save <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7" data-pg-name="Summary">
+                            <nav aria-label="breadcrumb" wc-breadcrumbs wc-breadcrumbs-link="[data-pg-name=&quot;Crumb With Link&quot;]" wc-breadcrumbs-link-text="[data-pg-name=&quot;Crumb With Link Label&quot;]">
+                                <ol class="breadcrumb mb-1">
+                                    <li class="breadcrumb-item" data-pg-name="Crumb With Link"><a href="#" class="link-secondary text-decoration-none" data-pg-name="Crumb With Link Label"> Shop</a>
+                                    </li>
+                                    <li class="breadcrumb-item" cms-no-export><a href="#" class="link-secondary text-decoration-none">Shoes</a>
+                                    </li>
+                                    <li class="breadcrumb-item" cms-no-export><a href="#" class="link-secondary text-decoration-none">Nike</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                            <div class="gy-2 justify-content-between row" wc-product-title wc-product-title-text="[data-pg-name=&quot;Show Title&quot;]" data-pg-collapsed>
+                                <div class="col-auto">
+                                    <h2 class="fw-bold text-dark" data-pg-name="Show Title">Round Neck Plain T-Shirt</h2>
+                                </div>
+                                <div class="col-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-suit-heart fs-1" viewBox="0 0 16 16" data-pg-collapsed>
+                                        <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="gy-2 row" wc-product-rating wc-product-rating-mode="stars" wc-product-rating-active-star="[data-pg-name=&quot;Active Star&quot;]" wc-product-rating-half-star="[data-pg-name=&quot;Partial Star&quot;]" wc-product-rating-reviews-count="[data-pg-name=&quot;Display Label&quot;]">
+                                <div class="col-sm">
+                                    <div><span class="me-2 text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em" data-pg-name="Active Star">
+                                                <g>
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                                </g>
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                                <g>
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                                </g>
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                                <g>
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                                </g>
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                                <g>
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                                </g>
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em" data-pg-name="Partial Star">
+                                                <g>
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"></path>
+                                                </g>
+                                            </svg></span><a href="#" class="link-secondary" data-pg-name="Display Label">21 customer review</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" wc-product-short-description wc-product-short-description-text="[data-pg-name=&quot;Show Description&quot;]">
+                                <div class="col-lg-12">
+                                    <hr/>
+                                    <p class="mb-3" data-pg-name="Show Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <p class="align-items-center d-flex fs-4 gap-3 mb-4" wc-product-price wc-product-price-format="custom" wc-product-price-sale="[data-pg-name=&quot;Sale Price&quot;]" wc-product-price-regular-sale="[data-pg-name=&quot;Regular Price Sale&quot;]" wc-product-price-regular-no-sale="[data-pg-name=&quot;Regular Price No Sale&quot;]"><span class="opacity-50 text-decoration-line-through text-muted" data-pg-name="Regular Price Sale">$70.00</span><span class="fs-1 fw-bold text-danger" data-pg-name="Sale Price">$49.00</span><span class="fs-1 fw-bold text-dark" data-pg-name="Regular Price No Sale">$49.00</span></p>
+                            <div wc-product-stock class="mb-3">Stock information.</div>
+                            <form class="mb-3" wc-product-cart wc-product-cart-type="variable" wc-product-cart-variation-attribute="[data-pg-name=&quot;Repeated Attribute&quot;]" wc-product-cart-variation-attribute-label="[data-pg-name=&quot;Attribute Label&quot;]" wc-product-cart-variation-value="[data-pg-name=&quot;Attribute Selector&quot;]" wc-product-cart-variation-clear="[data-pg-name=&quot;Attribute Clear&quot;]" wc-product-cart-variation-single-wrapper="[data-pg-name=&quot;Selected Variation Wrapper&quot;]" wc-product-cart-variation-add-to-cart="[data-pg-name=&quot;Quantity and Button Wrapper&quot;]" wc-product-cart-quantity="[data-pg-name=&quot;Quantity Field&quot;]" wc-product-cart-button="[data-pg-name=&quot;Add to Cart Button&quot;]" wc-product-cart-variation-template="[data-pg-name=&quot;Variation Template&quot;]" wc-product-cart-variation-template-desc="[data-pg-name=&quot;Template Description&quot;]" wc-product-cart-variation-template-price="[data-pg-name=&quot;Template Price&quot;]" wc-product-cart-variation-template-availability="[data-pg-name=&quot;Template Availability&quot;]" wc-product-cart-variation-template-not-available="[data-pg-name=&quot;Template Not Available&quot;]" wc-product-cart-variation-template-price-unformat="true" data-pg-collapsed>
+                                <div class="mb-4 row" data-pg-name="Repeated Attribute">
+                                    <label for="inputSize" class="col-form-label col-lg-3 col-md-4 col-sm-3 col-xl-2 text-dark" data-pg-name="Attribute Label">Size</label>
+                                    <div class="col-sm-auto">
+                                        <select class="form-select rounded-0" id="inputSize" data-pg-name="Attribute Selector">
+                                            <option selected>Choose an option</option>
+                                            <option>31</option>
+                                            <option>32</option>
+                                            <option>33</option>
+                                            <option>34</option>
+                                            <option>35</option>
+                                        </select><a href="#" class="d-inline-block link-primary mt-2" data-pg-name="Attribute Clear"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1.25em" height="1.25em" fill="currentColor" class="me-2">
+                                                <path d="M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z"/>
+                                            </svg><span class="align-middle">Clear</span></a>
+                                    </div>
+                                </div>
+                                <div class="mb-4 row" cms-no-export>
+                                    <label for="inputColor" class="col-form-label col-lg-3 col-md-4 col-sm-3 col-xl-2 text-dark">Color</label>
+                                    <div class="col-sm-auto">
+                                        <select class="form-select rounded-0" id="inputColor">
+                                            <option selected>Choose an option</option>
+                                            <option>Red</option>
+                                            <option>Yellow</option>
+                                            <option>Green</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-5 row">
+                                    <div class="col-12" data-pg-name="Selected Variation Wrapper">
+                                        <div data-pg-name="Variation Template">
+                                            <div class="alert alert-info">
+                                                <p class="fw-bold">Your selected product:</p>
+                                                <p data-pg-name="Template Description">Description</p>
+                                                <p data-pg-name="Template Price">Price</p>
+                                                <p data-pg-name="Template Availability">Availability</p>
+                                            </div>
+                                            <div class="alert alert-danger" data-pg-name="Template Not Available">
+                                                <p>Description</p>
+                                            </div>
+                                        </div>
+                                        <div class="row" data-pg-name="Quantity and Button Wrapper">
+                                            <label for="inputQty" class="col-form-label col-lg-3 col-md-4 col-sm-3 col-xl-2 text-dark">Quantity</label>
+                                            <div class="col-lg-2 col-sm-3" data-pg-name="Quantity Field">
+                                                <input type="number" class="form-control rounded-0" id="inputQty" placeholder="1" required="true"/>
+                                            </div>
+                                            <div class="col-md-12 mt-5" data-pg-collapsed>
+                                                <button type="submit" class="btn btn-danger fw-bold pb-2 pe-5 ps-5 pt-2 rounded-0" data-pg-name="Add to Cart Button">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="mb-3" wc-product-cart wc-product-cart-variation-attribute="[data-pg-name=&quot;Repeated Attribute&quot;]" wc-product-cart-variation-attribute-label="[data-pg-name=&quot;Attribute Label&quot;]" wc-product-cart-variation-value="[data-pg-name=&quot;Attribute Selector&quot;]" wc-product-cart-variation-clear="[data-pg-name=&quot;Attribute Clear&quot;]" wc-product-cart-variation-single-wrapper="[data-pg-name=&quot;Selected Variation Wrapper&quot;]" wc-product-cart-variation-add-to-cart="[data-pg-name=&quot;Quantity and Button Wrapper&quot;]" wc-product-cart-quantity="[data-pg-name=&quot;Quantity Field&quot;]" wc-product-cart-button="[data-pg-name=&quot;Add to Cart Button&quot;]" wc-product-cart-variation-template="[data-pg-name=&quot;Variation Template&quot;]" wc-product-cart-variation-template-desc="[data-pg-name=&quot;Template Description&quot;]" wc-product-cart-variation-template-price="[data-pg-name=&quot;Template Price&quot;]" wc-product-cart-variation-template-availability="[data-pg-name=&quot;Template Availability&quot;]" wc-product-cart-variation-template-not-available="[data-pg-name=&quot;Template Not Available&quot;]" wc-product-cart-variation-template-price-unformat="true" wc-product-cart-quantity-no-export="true" data-pg-collapsed wc-product-cart-template="save">
+                                <div class="mb-5 row" data-pg-name="Quantity and Button Wrapper">
+                                    <label for="inputQty" class="col-form-label col-lg-3 col-md-4 col-sm-3 col-xl-2 text-dark">Quantity</label>
+                                    <div class="col-lg-2 col-sm-3" data-pg-name="Quantity Field">
+                                        <input type="number" class="form-control rounded-0" id="inputQty" placeholder="1" required="true"/>
+                                    </div>
+                                    <div class="col-md-12 mt-5" data-pg-collapsed>
+                                        <button type="submit" class="btn btn-danger fw-bold pb-2 pe-5 ps-5 pt-2 rounded-0" data-pg-name="Add to Cart Button">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div wc-product-meta>Product meta information.</div>
+                            <div class="accordion accordion-flush border-bottom border-top mt-5" id="accordionFlushExample" wc-product-tabs wc-product-tabs-type="accordion" wc-product-tabs-nojs="true" wc-product-tabs-accordion-panel="[data-pg-name=&quot;Repeated Panel&quot;]" wc-product-tabs-accordion-header="[data-pg-name=&quot;Panel Header&quot;]" wc-product-tabs-accordion-header-text="[data-pg-name=&quot;Panel Header Label&quot;]" wc-product-tabs-accordion-content="[data-pg-name=&quot;Panel Content&quot;]" wc-product-tabs-accordion-content-body="[data-pg-name=&quot;Panel Content Body&quot;]">
+                                <div class="accordion-item" data-pg-name="Repeated Panel">
+                                    <h2 class="accordion-header" id="flush-headingOne" data-pg-name="Panel Header"> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" data-pg-name="Panel Header Label">Description</button> </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" data-pg-name="Panel Content">
+                                        <div class="accordion-body" data-pg-name="Panel Content Body">
+                                            <div wc-product-tab-description>
+                                                <p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint.
+                                            Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id
+                                            reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit
+                                            dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit
+                                            mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea
+                                            incididunt minim occaecat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Additional Information</button> </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div wc-product-tab-info>
+                                                <table class="table table-bordered" wc-product-attributes wp-product-attributes-item="[data-pg-name=&quot;Repeated Item&quot;]" wp-product-attributes-label="[data-pg-name=&quot;Attribute Label&quot;]" wp-product-attributes-value="[data-pg-name=&quot;Attribute Value&quot;]">
+                                                    <tbody>
+                                                        <tr data-pg-name="Repeated Item">
+                                                            <td class="bg-light" data-pg-name="Attribute Label">Mark</td>
+                                                            <td data-pg-name="Attribute Value">Otto</td>
+                                                        </tr>
+                                                        <tr cms-no-export>
+                                                            <td class="bg-light">Jacob</td>
+                                                            <td>Thornton</td>
+                                                        </tr>
+                                                        <tr cms-no-export>
+                                                            <td class="bg-light">Larry</td>
+                                                            <td>the Bird</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Reviews (0)</button> </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint.
+                                        Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id
+                                        reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit
+                                        dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit
+                                        mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea
+                                        incididunt minim occaecat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section wc-product-upsells wc-product-upsells-heading="[data-pg-name=&quot;Heading&quot;]" wc-product-upsells-item="[data-pg-name=&quot;Repeated Item&quot;]" wc-product-upsells-limit="4">
+                    <div class="container pb-4 pt-4">
+                        <div class="align-items-center row">
+                            <div class="col">
+                                <hr class="mb-0 mt-0"/>
+                            </div>
+                            <div class="col-auto">
+                                <h2 class="fw-normal lead mb-0 text-dark" data-pg-name="Heading">Level up with these add-ons</h2>
+                            </div>
+                            <div class="col">
+                                <hr class="mb-0 mt-0"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="justify-content-center row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 pb-3 pt-3" data-pg-name="Repeated Item">
+                                <div class="position-relative"> <a href="#" class="d-block mb-3" wc-product-link><img src="https://images.unsplash.com/photo-1553798397-0aee146267a1?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ4fHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700" wc-product-thumbnail="woocommerce_thumbnail" wc-product-thumbnail-sizes="(max-width: 320px) 88vw, (max-width: 640px) 246px, (max-width: 768px) 34vw, (max-width: 1024px) 216px, (max-width: 1280px) 261px, (max-width: 1440px) 306px, 306px"/></a>
+                                    <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none" wc-product-cats wc-product-cats-display="this" wc-product-cats-delimiter=", ">Armani</a>
+                                    <a href="#" class="link-dark text-decoration-none" wc-product-link><h3 class="h6" wc-product-title>Borgonuovo T-shirt in viscose jersey</h3></a>
+                                    <div class="" wc-product-price wc-product-price-format="custom" wc-product-price-sale="[data-pg-name=&quot;Sale Price&quot;]" wc-product-price-regular-sale="[data-pg-name=&quot;Regular Price Sale&quot;]" wc-product-price-regular-no-sale="[data-pg-name=&quot;Regular Price No Sale&quot;]">
+                                        <s class="me-2" data-pg-name="Regular Price Sale">$ 95</s>
+                                        <span class="h6 text-danger" data-pg-name="Sale Price">$ 75</span><span class="h6" data-pg-name="Regular Price No Sale">$ 75</span>
+                                    </div>
+                                    <a type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0" wc-loop-add-to-cart wc-loop-add-to-cart-remove-style="true">Add To Cart</a>
+                                    <div class="bg-danger fw-bold pb-2 pe-3 position-absolute ps-3 pt-2 rounded-end text-white" style="top: 50px; left: 0;" wc-product-sale wc-product-sale-amount-sel="span">Save <span>10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 pb-3 pt-3" cms-no-export>
+                                <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1569033083669-a63ea13bc769?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM2NHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                    <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                    <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                    <div>
+                                        <span class="me-2">$ 100</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0">Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 pb-3 pt-3" cms-no-export>
+                                <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1611986773179-7d14794ede62?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ2Nnx8dCUyMHNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                    <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                    <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                    <div>
+                                        <span class="me-2">$ 95</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0">Add To Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 pb-3 pt-3" cms-no-export>
+                                <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDcwOXx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                    <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                    <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                    <div>
+                                        <span class="me-2">$ 75</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-4 pt-4 text-center">
+</div>
+                    </div>
+                </section>
+                <section class="bg-light pb-5 pg-lib-item pt-5" wc-product-related wc-product-related-heading="[data-pg-name=&quot;Heading&quot;]" wc-product-related-item="[data-pg-name=&quot;Repeated Item&quot;]" wc-product-related-posts-per-page="3">
+                    <div class="container pb-5 pt-5">
+                        <div class="align-items-center gy-4 row">
+                            <div class="col">
+                                <h2 class="h6">How about these great products?</h2>
+                                <h3 class="fw-bold h2 text-dark" data-pg-name="Heading">You might also enjoy these cool products</h3>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="gy-4 row row-cols-md-3">
+                                    <div class="col-sm-6" data-pg-name="Repeated Item">
+                                        <div class="position-relative"> <a href="#" class="d-block mb-3" wc-product-link><img src="https://images.unsplash.com/photo-1590999659195-e64a988eaf4f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDU0fHx0c2hpcnR8ZW58MHx8fHwxNjQ0NTQzNjIw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="700" wc-product-thumbnail wc-product-thumbnail-sizes="(max-width: 320px) 88vw, (max-width: 640px) 246px, (max-width: 768px) 34vw, (max-width: 1024px) 216px, (max-width: 1280px) 261px, (max-width: 1440px) 306px, 306px" wc-product-thumbnail-template="use"/></a>
+                                            <a href="#" class="text-dark text-decoration-none" wc-product-link><h3 class="h6" wc-product-title wc-product-title-template="use">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                            <div wc-product-price wc-product-price-template="use">
+                                                <s class="me-2">$ 95</s>
+                                                <span class="h6 text-danger">$ 75</span>
+                                            </div><a type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0" wc-loop-add-to-cart wc-loop-add-to-cart-remove-style="true" wc-loop-add-to-cart-template="use">Add To Cart</a>
+                                            <div class="bg-danger fw-bold pb-2 pe-3 position-absolute ps-3 pt-2 rounded-end text-white" style="top: 50px; left: 0;" wc-product-sale wc-product-sale-amount-sel="this" wc-product-sale-template="use">Save <span>10%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" cms-no-export>
+                                        <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1621561248609-dd398ae5c2ec?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDcwfHx0c2hpcnR8ZW58MHx8fHwxNjQ0NTQzNjIw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="700"/></a>
+                                            <a href="#" class="text-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                            <div>
+                                                <span class="me-2">$ 100</span>
+                                            </div>
+                                            <button type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" cms-no-export>
+                                        <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1613618958001-ee9ad8f01f9c?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDQ0OHx8dC1zaGlydHxlbnwwfHx8fDE2NDUyMDcxMzg&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="700"/></a>
+                                            <a href="#" class="text-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                            <div>
+                                                <span class="me-2">$ 115</span>
+                                            </div>
+                                            <button type="submit" class="btn btn-outline-dark fw-bold mt-3 pb-2 pe-5 ps-5 pt-2 rounded-0">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-dark pt-5 text-white" data-pg-collapsed> 
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-xl-4 py-3"> <a href="#" class="d-inline-block fw-bold h2 link-light mb-4 text-decoration-none" target="_pg_blank">PG Shop</a> 
+                        <p class="mb-3">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
+                        <div class="mb-4"> <a href="#" class="link-light text-decoration-none">+1 234 567-890</a> <br/> <a href="#" class="link-light text-decoration-none">hello@company.com</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="col-md-3 col-xl-2 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white">About</h2> 
+                        <ul class="list-unstyled"> 
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Get Quote</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Enterprise Plan</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Become an Affiliate</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Our Portfolio</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-3 col-xl-2 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white">Services</h2> 
+                        <ul class="list-unstyled"> 
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Web Design</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Web Development</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">WordPress</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Digital Marketing</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Content Writing</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-6 col-xl-4 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white">Subscribe</h2>
+                        <p class="mb-3">Subscribe to our newsletter and get exclusive updates directly in your inbox.</p>
+                        <form class="mb-4"> 
+                            <div class="bg-white border input-group overflow-hidden p-1">
+                                <input type="text" class="border-0 form-control pe-3 ps-3" placeholder="Enter email..." aria-label="Recipient's email" aria-describedby="newsletter-submit2"/>
+                                <button class="btn btn-dark pb-2 ps-4 pe-4 pt-2 rounded-0" type="button" id="newsletter-submit2" aria-label="submit">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="d-inline-block" height="16" width="16">
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                    </svg>                                     
+                                </button>
+                            </div>
+                        </form>
+                        <h2 class="fw-normal h5 mb-3 text-uppercase text-white">Get Social</h2>
+                        <div class="d-inline-flex flex-wrap"> <a href="#" class="link-light p-1" aria-label="facebook link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="twitter link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="instagram link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="linkedin link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="youtube link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/> 
+                                </svg> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="pb-3 pt-3 small"> 
+                    <hr class="border-secondary mt-0"/> 
+                    <div class="align-items-center row">
+                        <div class="col-md pb-2 pt-2">
+                            <p class="mb-0">&copy; 2002 - 2021 | All Rights Reserved - Company Name</p>
+                        </div>
+                        <div class="col-md-auto pb-2 pt-2">
+                            <a href="#" class="link-light text-decoration-none">Privacy Policy</a> | <a href="#" class="link-light text-decoration-none">Terms of Use</a>
+                        </div>
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+        <script src="custom.js" wp-enqueue-script wp-enqueue-script-deps="jquery"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-no-export>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Pinegrow Web Editor - Shop Bootstrap v5 Template"/>
+        <meta name="author" content=""/>
+        <title>Pinegrow | Bootstrap Blocks Template</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="blocks.css"/>
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="custom.css"/>
+        <link rel="stylesheet" href="gallery.css"/>
+        <link rel="stylesheet" href="button.css"/>
+        <link rel="stylesheet" href="notice.css"/>
+    </head>
+    <body class="fw-light text-secondary">
+        <nav class="bg-dark navbar navbar-dark navbar-expand-lg py-lg-1" data-pg-collapsed> 
+            <div class="container"> <a class="fw-bold navbar-brand" href="#" target="_pg_blank" cms-site-name>PG Shop</a>
+                <ul class="flex-row ms-auto navbar-nav order-lg-1 ps-2 pe-2"> 
+                    <li class="nav-item"> <a class="nav-link p-2 pb-3 ps-2 pe-2 pt-3" href="#" title="View Cart" wc-view-cart-link wc-view-cart-link-empty="[data-pg-name=&quot;Show if empty&quot;]" wc-view-cart-link-not-empty="[data-pg-name=&quot;Show if not empty&quot;]" wc-view-cart-link-count="[data-pg-name=&quot;Cart Count&quot;]" wc-view-cart-link-count-singular="'(%d)'" wc-view-cart-link-count-plural="'(%d)'"><span data-pg-name="Show if empty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                    </g>
+                                </svg> <span class="small">(0)</span></span><span class="text-warning" data-pg-name="Show if not empty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                    </g>
+                                </svg> <span class="small" data-pg-name="Cart Count">(0)</span></span> </a> 
+                    </li>                     
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown-3"> 
+                    <ul class="ms-auto navbar-nav" cms-menu="primary"> 
+                        <li class="nav-item"><a class="active nav-link px-lg-3 py-lg-4" aria-current="page" href="#">Home</a>
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">About</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Collection</a> 
+                        </li>
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Shop</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Blog</a> 
+                        </li>                         
+                    </ul>
+                    <ul class="ms-auto navbar-nav"> 
+                        <li class="nav-item"> <a class="nav-link pt-3" href="#" title="Search"><form _lpchecked="1" wc-search wc-search-template="use"> 
+                                    <div class="input-group">
+                                        <input type="text" class="border-end-0 form-control p-2" placeholder="Search" aria-label="Enter Keyword" aria-describedby="keyword-input"/>
+                                        <span class="bg-white input-group-text p-0" id="keyword-input"><button class="align-items-center btn d-inline-flex h-100" type="submit" id="button-addon1" aria-label="Search">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+                                                    <g>
+                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                        <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>
+                                                    </g>
+                                                </svg>
+                                            </button></span>
+                                    </div>                                     
+                                </form></a> 
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </div>             
+        </nav>
+        <main wp-site-content>
+            <section class="background-cover bg-dark pb-5 position-relative pt-5 text-white" style="background-image:url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI0fHxmYXNoaW9uJTIwc2hvb3R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080');" cms-block="front-hero" cms-block-title="Front Hero" cms-block-category="custom" cms-block-category-custom="shop" cms-block-field="background" cms-block-field-type="background-image" cms-block-field-title="Background image" data-pg-collapsed>
+                <div class="container pb-5 pt-5">
+                    <div class="pb-5 pt-5 row">
+                        <div class="col-lg-7 pb-5 pt-5">
+                            <p class="fw-normal h4 text-uppercase" cms-block-field="sup_heading" cms-block-field-type="content" cms-block-field-title="Upper heading" cms-block-field-if-empty="if">New Collection</p>
+                            <h1 class="display-3 fw-bold mb-3" cms-block-field="heading" cms-block-field-type="content" cms-block-field-title="Heading">Best Fabric Meets New Style</h1>
+                            <p class="lead mb-4" cms-block-field="tagline" cms-block-field-type="content" cms-block-field-title="Tagline" cms-block-field-if-empty="if">Our ability to feel, act and communicate is indistinguishable from magic.</p>
+                            <a href="#" class="btn btn-light pb-2 ps-4 pe-4 pt-2" cms-block-field="button_link" cms-block-field-type="link" cms-block-field-title="Button link" cms-block-field-2="button_label" cms-block-field-type-2="content" cms-block-field-title-2="Button label" cms-block-field-if-empty="if">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pt-3" cms-block="front-small-banners" cms-block-title="Front Small Banners" cms-block-category="custom" cms-block-category-custom="shop">
+                <div class="container">
+                    <div class="justify-content-center row" cms-block-inner-content cms-block-inner-content-allowed="front-small-banner" cms-block-inner-content-orientation="horizontal">
+                        <div class="col-md col-sm-6 py-3" cms-block="front-small-banner" cms-block-title="Front Small Banner" cms-block-category="custom" cms-block-category-custom="shop" cms-block-parent="front-small-banners">
+                            <div class="position-relative text-dark">
+                                <img src="https://images.unsplash.com/photo-1467043237213-65f2da53396f?fp-z=3.75&fp-y=.5&fp-x=0&crop=focalpoint&fit=crop&w=280&h=200" class="img-fluid w-100" alt="Product image" width="280" height="200" cms-block-field="image" cms-block-field-type="image" cms-block-field-image-size="woocommerce_thumbnail" cms-block-field-title="Image"/>
+                                <div class="bottom-0 end-0  pb-5 pe-4 position-absolute ps-4 start-0">
+                                    <h2 class="h5 mb-3" cms-block-field="title" cms-block-field-type="content" cms-block-field-title="Title">Mens Summer Collection</h2>
+                                    <a href="#" class="link-secondary small stretched-link text-decoration-none" cms-block-field="link_label" cms-block-field-type="content" cms-block-field-2="link_url" cms-block-field-title="Link label" cms-block-field-type-2="link" cms-block-field-title-2="Link address">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-6 py-3" cms-no-export>
+                            <div class="position-relative text-dark">
+                                <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?h=200&w=280&fit=crop&crop=focalpoint&fp-x=0&fp-y=.5&fp-z=3.75" class="img-fluid w-100" alt="Product image" width="280" height="200"/>
+                                <div class="bottom-0 end-0  pb-5 pe-4 position-absolute ps-4 start-0">
+                                    <h2 class="h5 mb-3">Womens New Arrival</h2>
+                                    <a href="#" class="link-secondary small stretched-link text-decoration-none">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-6 py-3" cms-no-export>
+                            <div class="position-relative text-dark">
+                                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?h=200&w=280&fit=crop&crop=focalpoint&fp-x=0&fp-y=.5&fp-z=3" class="img-fluid w-100" alt="Product image" width="280" height="200"/>
+                                <div class="bottom-0 end-0  pb-5 pe-4 position-absolute ps-4 start-0">
+                                    <h2 class="h5 mb-3">Womens New Arrival</h2>
+                                    <a href="#" class="link-secondary small stretched-link text-decoration-none">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class=" pb-3 pt-3 text-center" cms-block="shop-front-cta" cms-block-title="Shop Front CTA" cms-block-category="custom" cms-block-category-custom="shop" data-pg-collapsed>
+                <div class="container">
+                    <div class="bg-dark text-white">
+                        <div class="align-items-center row">
+                            <div class="col-lg-6 pb-5 pb-lg-0 pt-5 pt-lg-0">
+                                <div class="ps-5 pe-5">
+                                    <h2 class="fw-normal h5 mb-1 text-white-50" cms-block-field="top_title" cms-block-field-type="content" cms-block-field-title="Top title" cms-block-field-if-empty="if">Grab your collection today</h2>
+                                    <h3 class="fw-bold h1 mb-4" cms-block-field="text" cms-block-field-type="content" cms-block-field-title="Text">Seasonal Sale Upto 70% off</h3>
+                                    <a href="#" class="btn btn-light pb-2 ps-4 pe-4 pt-2" cms-block-field="link" cms-block-field-type="link" cms-block-field-2="label" cms-block-field-type-2="content" cms-block-field-if-empty="if">Shop Collection</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1610970161790-57a21fc7d775?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=480&h=360&fit=crop" class="d-block img-fluid w-100" alt="CTA image" width="480" height="360" cms-block-field="image" cms-block-field-type="image" cms-block-field-image-size="woocommerce_thumbnail" cms-block-field-title="Image" style="max-height: 320px; object-fit: cover;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section cms-block="shop-product-list" cms-block-title="Shop Product List" cms-block-category="custom" cms-block-category-custom="shop" data-pg-collapsed>
+                <div class="container pb-4 pt-4">
+                    <div class="align-items-center row">
+                        <div class="col">
+                            <hr class="mb-0 mt-0"/>
+                        </div>
+                        <div class="col-auto">
+                            <h2 class="fw-normal lead mb-0 text-dark" cms-block-field="title" cms-block-field-type="content" cms-block-field-title="Title">Popular this Week</h2>
+                        </div>
+                        <div class="col">
+                            <hr class="mb-0 mt-0"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="justify-content-center row" wc-show-products="query" wc-show-products-mode="freestyle" wc-show-products-type-count="@block:count" wc-show-products-repeat="[data-pg-name=&quot;Repeated Item&quot;]" cms-block-field="count" cms-block-field-type="none" cms-block-field-title="How many products to show?" cms-block-field-2="orderby" cms-block-field-type-2="none" cms-block-field-title-2="Order by" cms-block-field-control-2="select" cms-block-field-values-2="Slug=name
+Title=title
+Price=price
+Average rating=rating
+Review count=review_count
+Total sales=total_sales
+Date=date
+Modified date=modified
+Id=ID
+Description=description
+Comment count=comment_count
+Menu order=menu_order
+Meta value=meta_value
+Meta value numeric=meta_value_num
+Random=rand" wc-show-products-type-orderby="@block:orderby" cms-block-field-3="direction" cms-block-field-type-3="none" cms-block-field-title-3="Order direction" cms-block-field-control-3="select" cms-block-field-values-3="Ascending=asc
+Descending=desc" wc-show-products-type-order="@block:direction" cms-block-field-default-value="4" cms-block-field-control="select" cms-block-field-values="1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12" cms-block-field-4="sale" cms-block-field-type-4="none" cms-block-field-title-4="On sale" cms-block-field-control-4="select" cms-block-field-values-4="Yes=true
+No=false" wc-show-products-on-sale="@block:sale" data-pg-collapsed cms-block-field-5="tags" cms-block-field-type-5="none" cms-block-field-title-5="Product tags" cms-block-field-help-5="List tags..." cms-block-field-6="cats" cms-block-field-type-6="none" cms-block-field-title-6="Product categories" cms-block-field-help-6="List categories..." wc-show-products-tags="@block:tags" wc-show-products-categories="@block:cats">
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" data-pg-name="Repeated Item">
+                            <div class="position-relative"> <a href="#" class="d-block mb-3" wc-product-link><img src="https://images.unsplash.com/photo-1598403031688-e7cfd2c222c4?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM2NXx8dCUyMHNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700" wc-product-thumbnail wc-product-thumbnail-template="use"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none" wc-product-cats wc-product-cats-display="this" wc-product-cats-range="0">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none" wc-product-link><h3 class="h6" wc-product-title wc-product-title-template="use">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="" wc-product-price wc-product-price-template="use">
+                                    <s class="me-2">$ 95</s>
+                                    <span class="h6 text-danger">$ 75</span>
+                                </div>
+                                <div class="mb-3" wc-product-rating wc-product-rating-mode="stars" wc-product-rating-active-star="[data-pg-name=&quot;Active Star&quot;]" wc-product-rating-half-star="[data-pg-name=&quot;Partial Star&quot;]" wc-product-rating-reviews-count="[data-pg-name=&quot;Reviews Count&quot;]" cms-block-field="show_ratings" cms-block-field-type="none" cms-block-field-title="Show ratings" cms-block-field-if-empty="if" cms-block-field-control="toggle" cms-block-field-checkbox-value="1"><span class="me-2 text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em" data-pg-name="Active Star">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                            </g>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                            </g>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                            </g>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em" data-pg-name="Partial Star">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"></path>
+                                            </g>
+                                        </svg></span><a href="#" class="link-secondary" data-pg-name="Reviews Count">21 customer review</a>
+                                </div>
+                                <div class="bg-danger fw-bold pb-2 pe-3 position-absolute ps-3 pt-2 rounded-end text-white" style="top: 50px; left: 0;" wc-product-sale wc-product-sale-template="use">Save <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1589747297079-6ab76138dcab?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHQtc2hpcnR8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1554526735-356bb52de232?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIxfHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM0OXx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 75</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1605295982505-556d4026a930?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDg4fHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 115</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1604908695926-17ee04a3c54f?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE4M3x8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <s class="me-2">$ 125</s>
+                                    <span class="h6 text-danger">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1554971052-d465be00ca02?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIyNHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1600823722907-43f78d7ba93f?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIyOHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4 pt-4 text-center" cms-block-field="button_link" cms-block-field-type="none" cms-block-field-title="Button link" cms-block-field-if-empty="if" cms-block-field-control="link"><a href="#" class="btn btn-dark pb-2 ps-4 pe-4 pt-2" cms-block-field="button_link" cms-block-field-type="link" cms-block-field-title="Button link" cms-block-field-2="button_label" cms-block-field-type-2="content" cms-block-field-title-2="Button label">View More</a>
+                    </div>
+                </div>
+            </section>
+            <section cms-block="shop-product-pick" cms-block-title="Shop Product Pick" cms-block-category="custom" cms-block-category-custom="shop" data-pg-collapsed>
+                <div class="container pb-4 pt-4">
+                    <div class="align-items-center row">
+                        <div class="col">
+                            <hr class="mb-0 mt-0"/>
+                        </div>
+                        <div class="col-auto">
+                            <h2 class="fw-normal lead mb-0 text-dark" cms-block-field="title" cms-block-field-type="content" cms-block-field-title="Title">Hand picked products</h2>
+                        </div>
+                        <div class="col">
+                            <hr class="mb-0 mt-0"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="justify-content-center row" wc-show-products="block" wc-show-products-mode="freestyle" wc-show-products-type-count="@block:count" wc-show-products-repeat="[data-pg-name=&quot;Repeated Item&quot;]" wc-show-products-type-orderby="@block:orderby" wc-show-products-type-order="@block:direction" wc-show-products-on-sale="@block:sale" data-pg-collapsed wc-show-products-tags="@block:tags" wc-show-products-categories="@block:cats" wc-show-products-block-attribute="products" wc-show-products-block-attribute-title="Shown products">
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" data-pg-name="Repeated Item">
+                            <div class="position-relative"> <a href="#" class="d-block mb-3" wc-product-link><img src="https://images.unsplash.com/photo-1598403031688-e7cfd2c222c4?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM2NXx8dCUyMHNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700" wc-product-thumbnail wc-product-thumbnail-template="use"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none" wc-product-cats wc-product-cats-display="this" wc-product-cats-range="0">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none" wc-product-link><h3 class="h6" wc-product-title wc-product-title-template="use">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="" wc-product-price wc-product-price-template="use">
+                                    <s class="me-2">$ 95</s>
+                                    <span class="h6 text-danger">$ 75</span>
+                                </div>
+                                <div class="mb-3" wc-product-rating wc-product-rating-mode="stars" wc-product-rating-active-star="[data-pg-name=&quot;Active Star&quot;]" wc-product-rating-half-star="[data-pg-name=&quot;Partial Star&quot;]" wc-product-rating-reviews-count="[data-pg-name=&quot;Reviews Count&quot;]" cms-block-field="show_ratings" cms-block-field-type="none" cms-block-field-title="Show ratings" cms-block-field-if-empty="if" cms-block-field-control="toggle" cms-block-field-checkbox-value="1" wc-product-rating-template="use"><span class="me-2 text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em" data-pg-name="Active Star">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                            </g>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                            </g>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                                            </g>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em" data-pg-name="Partial Star">
+                                            <g>
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"></path>
+                                            </g>
+                                        </svg></span><a href="#" class="link-secondary" data-pg-name="Reviews Count">21 customer review</a>
+                                </div>
+                                <div class="bg-dark fw-bold pb-2 pe-3 position-absolute ps-3 pt-2 rounded-end text-white" style="top: 50px; left: 0;" wc-product-sale wc-product-sale-amount-sel="span" wc-product-sale-amount-type="amount" wc-product-sale-template-variant="dark">Save <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1589747297079-6ab76138dcab?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDJ8fHQtc2hpcnR8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1554526735-356bb52de232?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDIxfHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3" cms-no-export>
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM0OXx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 75</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4 pt-4 text-center" cms-block-field="button_link" cms-block-field-type="none" cms-block-field-title="Button link" cms-block-field-if-empty="if" cms-block-field-control="link"><a href="#" class="btn btn-dark pb-2 ps-4 pe-4 pt-2" cms-block-field="button_link" cms-block-field-type="link" cms-block-field-title="Button link" cms-block-field-2="button_label" cms-block-field-type-2="content" cms-block-field-title-2="Button label">View More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-4 pt-4" data-pg-collapsed>
+                <div class="container">
+                    <div class="justify-content-center row">
+                        <div class="col-md-6 py-3">
+                            <div class="position-relative text-dark">
+                                <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?fp-z=2.25&fp-y=.5&fp-x=.5&crop=focalpoint&fit=crop&w=450&h=300" class="img-fluid w-100" alt="Product image" width="450" height="300"/>
+                                <div class="bottom-0 end-0  pb-5 pe-4 position-absolute ps-4 start-0">
+                                    <h2 class="h4 mb-3">Unique Sneakers for Men</h2>
+                                    <a href="#" class="link-dark stretched-link text-decoration-none">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <div class="position-relative text-dark">
+                                <img src="https://images.unsplash.com/photo-1534534734151-83bc15801803?h=300&w=450&fit=crop&crop=focalpoint&fp-x=.5&fp-y=.5&fp-z=2.25" class="img-fluid w-100" alt="Product image" width="450" height="300"/>
+                                <div class="bottom-0 end-0  pb-5 pe-4 position-absolute ps-4 start-0">
+                                    <h2 class="h4 mb-3">Latest Arrival for Women</h2>
+                                    <a href="#" class="link-dark stretched-link text-decoration-none">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-pg-collapsed>
+                <div class="container pb-4 pt-4">
+                    <div class="align-items-center row">
+                        <div class="col">
+                            <hr class="mb-0 mt-0"/>
+                        </div>
+                        <div class="col-auto">
+                            <h2 class="fw-normal lead mb-0 text-dark">Latest Arrival</h2>
+                        </div>
+                        <div class="col">
+                            <hr class="mb-0 mt-0"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="justify-content-center row">
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3">
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1553798397-0aee146267a1?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ4fHx0LXNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div class="">
+                                    <s class="me-2">$ 95</s>
+                                    <span class="h6 text-danger">$ 75</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3">
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1569033083669-a63ea13bc769?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDM2NHx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3">
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1611986773179-7d14794ede62?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDQ2Nnx8dCUyMHNoaXJ0fGVufDB8fHw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 pb-3 pt-3">
+                            <div> <a href="#" class="d-block mb-3"><img src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDcwOXx8dC1zaGlydHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=700&fit=crop" class="img-fluid w-100" alt="Product image" width="500" height="700"/></a>
+                                <a href="#" class="d-inline-block link-secondary mb-2 small text-decoration-none">Armani</a>
+                                <a href="#" class="link-dark text-decoration-none"><h3 class="h6">Borgonuovo T-shirt in viscose jersey</h3></a>
+                                <div>
+                                    <span class="me-2">$ 75</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4 pt-4 text-center">
+                        <a href="#" class="btn btn-dark pb-2 ps-4 pe-4 pt-2">View More</a>
+                    </div>
+                </div>
+            </section>
+            <div cms-block="shop-categories" cms-block-title="Shop Categories" cms-block-category="custom" cms-block-category-custom="shop">
+                <section class="bg-light pb-5 pg-lib-item pt-5 text-secondary" wc-cats wc-cats-mode="sub" wc-cats-item="[data-pg-name=&quot;Repeated Category&quot;]" cms-block-field-title="Parent category" cms-block-field-type="none" cms-block-field="parent" wc-cats-parent="@block:parent" cms-block-field-default-value="0" wc-cats-items="[data-pg-name=&quot;Categories Container&quot;]">
+                    <div class="container pb-5 pt-5">
+                        <h1 class="h2 mb-4 text-dark" cms-block-field-title="Title" cms-block-field-type="content" cms-block-field="title">Subcategories</h1>
+                        <div class="g-md-5 gy-4 justify-content-center row row-cols-lg-3 row-cols-sm-2" data-pg-name="Categories Container">
+                            <div data-pg-name="Repeated Category"> <a href="#" class="d-block link-dark position-relative" wc-cat-link><img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDN8fGNsb3RoaW5nfGVufDB8fHx8MTY0NjIzNzg5Nw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=600&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="600" wc-cat-image/><div class="bg-white bottom-0 end-0 mb-3 me-3 ms-3 p-4 position-absolute rounded start-0">
+                                        <h2 class="fw-bold h5 mb-0"><span wc-cat-name>Clothing</span> (<span wc-cat-count>32</span>)</h2>
+                                    </div></a>
+                            </div>
+                            <div cms-no-export> <a href="#" class="d-block link-dark position-relative"><img src="https://images.unsplash.com/photo-1481207727306-1a9f151fca7d?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDQzfHxlbGVjdHJvbmljfGVufDB8fHx8MTY0NjIzNjc1NA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=600&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="600"/><div class="bg-white bottom-0 end-0 mb-3 me-3 ms-3 p-4 position-absolute rounded start-0">
+                                        <h2 class="fw-bold h5 mb-0">Electronics (24)</h2>
+                                    </div></a>
+                            </div>
+                            <div cms-no-export> <a href="#" class="d-block link-dark position-relative"><img src="https://images.unsplash.com/photo-1583241475880-083f84372725?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDd8fGtpdGNoZW4lMjBhcHBsaWFuY2V8ZW58MHx8fHwxNjQ2MjM2ODE5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=600&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="600"/><div class="bg-white bottom-0 end-0 mb-3 me-3 ms-3 p-4 position-absolute rounded start-0">
+                                        <h2 class="fw-bold h5 mb-0">Kitchen (16)</h2>
+                                    </div></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div cms-block="shop-categories-select" cms-block-title="Shop Categories Select" cms-block-category="custom" cms-block-category-custom="shop">
+                <section class="bg-dark pb-5 pg-lib-item pt-5" wc-cats wc-cats-mode="list" wc-cats-item="[data-pg-name=&quot;Repeated Category&quot;]" cms-block-field-title="List of categories" cms-block-field-type="none" cms-block-field="list" wc-cats-parent="@block:parent" cms-block-field-default-value="0" wc-cats-list="@block:list" cms-block-field-help="A comma seperated list of category slugs." wc-cats-items="[data-pg-name=&quot;Categories Container&quot;]">
+                    <div class="container pb-5 pt-5">
+                        <h1 class="h2 mb-4 text-white" cms-block-field-title="Title" cms-block-field-type="content" cms-block-field="title">Selected categories</h1>
+                        <div class="g-md-5 gy-4 justify-content-center row row-cols-lg-3 row-cols-sm-2" data-pg-name="Categories Container">
+                            <div data-pg-name="Repeated Category"> <a href="#" class="d-block link-dark position-relative" wc-cat-link><img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDN8fGNsb3RoaW5nfGVufDB8fHx8MTY0NjIzNzg5Nw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=600&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="600" wc-cat-image/><div class="bg-white bottom-0 end-0 mb-3 me-3 ms-3 p-4 position-absolute rounded start-0">
+                                        <h2 class="fw-bold h5 mb-0"><span wc-cat-name>Clothing</span> (<span wc-cat-count>32</span>)</h2>
+                                    </div></a>
+                            </div>
+                            <div cms-no-export> <a href="#" class="d-block link-dark position-relative"><img src="https://images.unsplash.com/photo-1481207727306-1a9f151fca7d?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDQzfHxlbGVjdHJvbmljfGVufDB8fHx8MTY0NjIzNjc1NA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=600&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="600"/><div class="bg-white bottom-0 end-0 mb-3 me-3 ms-3 p-4 position-absolute rounded start-0">
+                                        <h2 class="fw-bold h5 mb-0">Electronics (24)</h2>
+                                    </div></a>
+                            </div>
+                            <div cms-no-export> <a href="#" class="d-block link-dark position-relative"><img src="https://images.unsplash.com/photo-1583241475880-083f84372725?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDd8fGtpdGNoZW4lMjBhcHBsaWFuY2V8ZW58MHx8fHwxNjQ2MjM2ODE5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=500&h=600&fit=crop" class="img-fluid rounded w-100" alt="..." width="500" height="600"/><div class="bg-white bottom-0 end-0 mb-3 me-3 ms-3 p-4 position-absolute rounded start-0">
+                                        <h2 class="fw-bold h5 mb-0">Kitchen (16)</h2>
+                                    </div></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="bg-light mt-4 pb-5 pt-5 text-center" cms-block="shop-newsletter" cms-block-title="Shop Newsletter" cms-block-category="custom" cms-block-category-custom="shop" id="newsletter_mailer_id">
+                <div class="container pb-4 pt-4">
+                    <div class="row">
+                        <div class="col-lg-8 ms-auto me-auto py-3">
+                            <h2 class="text-dark" cms-block-field="title" cms-block-field-type="content" cms-block-field-title="Title">Join our newsletter and get 15% off</h2>
+                            <p class="mb-5 text-secondary" cms-block-field="subtitle" cms-block-field-type="content" cms-block-field-title="Subtitle">Sign up for our newsletter to receive updates and exclusive offers</p>
+                            <div class="col-md-9 col-xl-8 ms-auto me-auto">
+                                <form cms-form="newsletter" cms-form-send-email="true" cms-form-success-element=".alert">
+                                    <div class="bg-white border input-group overflow-hidden p-1">
+                                        <input type="text" class="border-0 form-control pe-3 ps-3" placeholder="Enter email..." aria-label="Recipient's email" aria-describedby="newsletter-submit"/>
+                                        <button class="btn btn-dark pb-2 pe-4 ps-4 pt-2 rounded-0" type="submit" id="newsletter-submit">Sign Up</button>
+                                    </div>
+                                    <div class="alert alert-success" data-pg-collapsed>Thank you for subscribing!</div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-5 pb-5 pt-5 text-center" cms-block="shop-features" cms-block-title="Shop Features" cms-block-category="custom" cms-block-category-custom="shop">
+                <div class="container">
+                    <div class="justify-content-center row" cms-block-inner-content cms-block-inner-content-allowed="shop-feature">
+                        <div class="col-lg-4 col-sm-6 pb-3 pt-3" cms-block="shop-feature" cms-block-title="Shop Feature" cms-block-category="custom" cms-block-category-custom="shop">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="3rem" height="3rem" class="mb-3 text-dark" cms-block-field="image" cms-block-field-type="image" cms-block-field-title="Image">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/>
+                                    </g>
+                                </svg>
+                                <h2 class="fw-bold h5 mb-3 text-dark" cms-block-field="title" cms-block-field-type="content" cms-block-field-title="Title">Free Shipping</h2>
+                                <p class="mb-0" cms-block-field="text" cms-block-field-type="content" cms-block-field-title="Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 pb-3 pt-3" cms-no-export>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="3rem" height="3rem" class="mb-3 text-dark">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM12 13.5l2.939 1.545-.561-3.272 2.377-2.318-3.286-.478L12 6l-1.47 2.977-3.285.478 2.377 2.318-.56 3.272L12 13.5z"/>
+                                    </g>
+                                </svg>
+                                <h2 class="fw-bold h5 mb-3 text-dark">100% Authentic</h2>
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 pb-3 pt-3" cms-no-export>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="3rem" height="3rem" class="mb-3 text-dark">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zM7.197 14.682l-2.175 2.174a8.549 8.549 0 0 0 1.818 1.899l.305.223 2.173-2.175a5.527 5.527 0 0 1-1.98-1.883l-.14-.238zm9.606 0a5.527 5.527 0 0 1-1.883 1.98l-.238.14 2.174 2.176a8.549 8.549 0 0 0 1.899-1.818l.223-.304-2.175-2.174zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM7.145 5.022a8.549 8.549 0 0 0-1.9 1.818l-.223.305 2.175 2.173a5.527 5.527 0 0 1 1.883-1.98l.238-.14-2.173-2.176zm9.71 0l-2.173 2.175a5.527 5.527 0 0 1 1.98 1.883l.14.238 2.176-2.173a8.549 8.549 0 0 0-1.818-1.9l-.304-.223z"/>
+                                    </g>
+                                </svg>
+                                <h2 class="fw-bold h5 mb-3 text-dark">24/7 Online Support</h2>
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid p-0" cms-block="shop-mosaic" cms-block-title="Shop Mosaic" cms-block-category="custom" cms-block-category-custom="shop">
+                <div class="g-0 row">
+                    <img src="https://images.unsplash.com/photo-1524738258074-f8125c6a7588?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" alt="Instagram image" width="400" height="400" class="col-2 img-fluid" cms-block-field="image_1" cms-block-field-type="image" cms-block-field-image-size="thumbnail" cms-block-field-title="Image 1"/>
+                    <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" alt="Instagram image" width="400" height="400" class="col-2 img-fluid" cms-block-field="image_2" cms-block-field-type="image" cms-block-field-image-size="thumbnail" cms-block-field-title="Image 2"/>
+                    <img src="https://images.unsplash.com/photo-1477044545293-98b9221de30a?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" alt="Instagram image" width="400" height="400" class="col-2 img-fluid" cms-block-field="image_3" cms-block-field-type="image" cms-block-field-image-size="thumbnail" cms-block-field-title="Image 3"/>
+                    <img src="https://images.unsplash.com/photo-1603217192634-61068e4d4bf9?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" alt="Instagram image" width="400" height="400" class="col-2 img-fluid" cms-block-field="image_4" cms-block-field-type="image" cms-block-field-image-size="thumbnail" cms-block-field-title="Image 4"/>
+                    <img src="https://images.unsplash.com/photo-1583001308455-e5d48b880c67?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" alt="Instagram image" width="400" height="400" class="col-2 img-fluid" cms-block-field="image_5" cms-block-field-type="image" cms-block-field-image-size="thumbnail" cms-block-field-title="Image 5"/>
+                    <img src="https://images.unsplash.com/photo-1579362094443-5d73793e4d3c?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="col-2 img-fluid" alt="Instagram image" width="400" height="400" cms-block-field="image_6" cms-block-field-type="image" cms-block-field-image-size="thumbnail" cms-block-field-title="Image 6"/>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark pt-5 text-white" data-pg-collapsed> 
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-xl-4 py-3"> <a href="#" class="d-inline-block fw-bold h2 link-light mb-4 text-decoration-none" target="_pg_blank">PG Shop</a> 
+                        <p class="mb-3">                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
+                        <div class="mb-4"> <a href="#" class="link-light text-decoration-none">+1 234 567-890</a> <br/> <a href="#" class="link-light text-decoration-none">hello@company.com</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="col-md-3 col-xl-2 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white">About</h2> 
+                        <ul class="list-unstyled"> 
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Get Quote</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Enterprise Plan</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Become an Affiliate</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Our Portfolio</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-3 col-xl-2 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white">Services</h2> 
+                        <ul class="list-unstyled"> 
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Web Design</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Web Development</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">WordPress</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Digital Marketing</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Content Writing</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-6 col-xl-4 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white">Subscribe</h2>
+                        <p class="mb-3">Subscribe to our newsletter and get exclusive updates directly in your inbox.</p>
+                        <form class="mb-4"> 
+                            <div class="bg-white border input-group overflow-hidden p-1">
+                                <input type="text" class="border-0 form-control pe-3 ps-3" placeholder="Enter email..." aria-label="Recipient's email" aria-describedby="newsletter-submit2"/>
+                                <button class="btn btn-dark pb-2 ps-4 pe-4 pt-2 rounded-0" type="button" id="newsletter-submit2" aria-label="submit">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="d-inline-block" height="16" width="16">
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                    </svg>                                     
+                                </button>
+                            </div>
+                        </form>
+                        <h2 class="fw-normal h5 mb-3 text-uppercase text-white">Get Social</h2>
+                        <div class="d-inline-flex flex-wrap"> <a href="#" class="link-light p-1" aria-label="facebook link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="twitter link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="instagram link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="linkedin link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="youtube link"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/> 
+                                </svg> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="pb-3 pt-3 small"> 
+                    <hr class="border-secondary mt-0"/> 
+                    <div class="align-items-center row">
+                        <div class="col-md pb-2 pt-2">
+                            <p class="mb-0">&copy; 2002 - 2021 | All Rights Reserved - Company Name</p>
+                        </div>
+                        <div class="col-md-auto pb-2 pt-2"><a href="#" class="link-light text-decoration-none">Privacy Policy</a> | <a href="#" class="link-light text-decoration-none">Terms of Use</a>
+                        </div>
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+        <script src="custom.js" wp-enqueue-script wp-enqueue-script-deps="jquery"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-export-as="index.php" wp-template-define-master-page="true">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Pinegrow Web Editor - Shop Bootstrap v5 Template"/>
+        <meta name="author" content=""/>
+        <title>Pinegrow | Bootstrap Blocks Template</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="blocks.css"/>
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="custom.css"/>
+        <link rel="stylesheet" href="gallery.css"/>
+        <link rel="stylesheet" href="button.css"/>
+        <link rel="stylesheet" href="notice.css"/>
+    </head>
+    <body class="fw-light text-secondary">
+        <nav class="bg-dark navbar navbar-dark navbar-expand-lg py-lg-1" data-pg-collapsed> 
+            <div class="container"> <a class="fw-bold navbar-brand" href="#" target="_pg_blank" cms-site-name>PG Shop</a>
+                <ul class="flex-row ms-auto navbar-nav order-lg-1 ps-2 pe-2"> 
+                    <li class="nav-item"> <a class="nav-link p-2 pb-3 ps-2 pe-2 pt-3" href="#" title="View Cart" wc-view-cart-link wc-view-cart-link-empty="[data-pg-name=&quot;Show if empty&quot;]" wc-view-cart-link-not-empty="[data-pg-name=&quot;Show if not empty&quot;]" wc-view-cart-link-count="[data-pg-name=&quot;Cart Count&quot;]" wc-view-cart-link-count-singular="'(%d)'" wc-view-cart-link-count-plural="'(%d)'"><span data-pg-name="Show if empty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                    </g>
+                                </svg> <span class="small">(0)</span></span><span class="text-warning" data-pg-name="Show if not empty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M7 8V6a5 5 0 1 1 10 0v2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3zm0 2H5v10h14V10h-2v2h-2v-2H9v2H7v-2zm2-2h6V6a3 3 0 0 0-6 0v2z"></path>
+                                    </g>
+                                </svg> <span class="small" data-pg-name="Cart Count">(0)</span></span> </a> 
+                    </li>                     
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown-3"> 
+                    <ul class="ms-auto navbar-nav" cms-menu="primary"> 
+                        <li class="nav-item"><a class="active nav-link px-lg-3 py-lg-4" aria-current="page" href="#">Home</a>
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">About</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Collection</a> 
+                        </li>
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Shop</a> 
+                        </li>                         
+                        <li class="nav-item"> <a class="nav-link px-lg-3 py-lg-4" href="#">Blog</a> 
+                        </li>                         
+                    </ul>
+                    <ul class="ms-auto navbar-nav"> 
+                        <li class="nav-item"> <a class="nav-link pt-3" href="#" title="Search"><form _lpchecked="1" wc-search wc-search-template="use"> 
+                                    <div class="input-group">
+                                        <input type="text" class="border-end-0 form-control p-2" placeholder="Search" aria-label="Enter Keyword" aria-describedby="keyword-input"/>
+                                        <span class="bg-white input-group-text p-0" id="keyword-input"><button class="align-items-center btn d-inline-flex h-100" type="submit" id="button-addon1" aria-label="Search">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+                                                    <g>
+                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                        <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>
+                                                    </g>
+                                                </svg>
+                                            </button></span>
+                                    </div>                                     
+                                </form></a> 
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </div>             
+        </nav>
+        <main wp-site-content>
+            <div class="container mb-5 mt-5">
+                <div class="mb-4 row">
+                    <div class="col-md-9">
+                        <nav aria-label="breadcrumb" wc-breadcrumbs wc-breadcrumbs-template="use">
+                            <ol class="breadcrumb mb-1">
+                                <li class="breadcrumb-item">
+                                    <a href="#" class="link-secondary text-decoration-none">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#" class="link-secondary text-decoration-none">Clothing</a>
+                                </li>
+                                <li class="active breadcrumb-item">
+                                    <a href="#" class="link-secondary text-decoration-none">T-Shirts</a>
+                                </li>
+                            </ol>
+                        </nav>                         
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <article cms-post="loop">
+                            <h1 class="text-body" cms-post-title>Column title</h1>
+                            <p class="lead" cms-post-excerpt cms-post-excerpt-if>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <hr/>
+                            <div cms-post-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</div>
+                        </article>                         
+                    </div>
+                    <div class="col-md-3" cms-sidebar="info" cms-sidebar-register cms-sidebar-name="Information">
+                        <h3>Column title</h3> 
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
+                    </div>
+                </div>
+            </div>
+            <div>
+</div>
+            <div></div>
+            <section></section>
+        </main>
+        <footer class="bg-dark pt-5 text-white" data-pg-collapsed cms-section="shop_footer" cms-section-title="Shop footer" cms-section-prefix="true"> 
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-xl-4 py-3"> <a href="#" class="d-inline-block fw-bold h2 link-light mb-4 text-decoration-none" target="_pg_blank" cms-site-link="home" cms-site-name>PG Shop</a> 
+                        <p class="mb-3" cms-editable="text" cms-editable-type="content" cms-editable-label="Text" cms-editable-textarea cms-editable-if>                                Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper.</p> 
+                        <div class="mb-4"> <a href="#" class="link-light text-decoration-none" cms-editable="phone" cms-editable-type="content" cms-editable-type-2="link" cms-editable-label="Phone number" cms-editable-2="phone_url" cms-editable-label-2="Phone url">+1 234 567-890</a> <br/> <a href="#" class="link-light text-decoration-none" cms-editable="email" cms-editable-type="content" cms-editable-type-2="link" cms-editable-label="Email" cms-editable-2="email_url" cms-editable-label-2="Email url">hello@company.com</a> 
+                        </div>                         
+                    </div>                     
+                    <div class="col-md-3 col-xl-2 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white" cms-editable="colum1_heading" cms-editable-type="content" cms-editable-label="Column 1 Heading">About</h2> 
+                        <ul class="list-unstyled" cms-menu="footer_1" cms-menu-register cms-menu-register-description="Footer Menu 1"> 
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Get Quote</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Enterprise Plan</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Become an Affiliate</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Our Portfolio</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-3 col-xl-2 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white" cms-editable="column2_heading" cms-editable-type="content" cms-editable-label="Column 2 Heading">Services</h2> 
+                        <ul class="list-unstyled" cms-menu="footer_2" cms-menu-register cms-menu-register-description="Footer Menu 2"> 
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Web Design</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Web Development</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">WordPress</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Digital Marketing</a> 
+                            </li>                             
+                            <li class="mb-3"> <a href="#" class="link-light text-decoration-none">Content Writing</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="col-md-6 col-xl-4 py-3"> 
+                        <h2 class="fw-normal h5 mb-4 text-uppercase text-white" cms-editable="column3_heading" cms-editable-type="content" cms-editable-label="Column 3 Heading">Subscribe</h2>
+                        <p class="mb-3" cms-editable="subscribe_text" cms-editable-type="content" cms-editable-label="Subscribe text">Subscribe to our newsletter and get exclusive updates directly in your inbox.</p>
+                        <form class="mb-4" cms-form="footer_subscribe" cms-form-send-email="true"> 
+                            <div class="bg-white border input-group overflow-hidden p-1">
+                                <input type="text" class="border-0 form-control pe-3 ps-3" placeholder="Enter email..." aria-label="Recipient's email" aria-describedby="newsletter-submit2"/>
+                                <button class="btn btn-dark pb-2 ps-4 pe-4 pt-2 rounded-0" type="submit" id="newsletter-submit2" aria-label="submit">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="d-inline-block" height="16" width="16">
+                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                    </svg>                                     
+                                </button>
+                            </div>
+                        </form>
+                        <h2 class="fw-normal h5 mb-3 text-uppercase text-white" cms-editable="social_heading" cms-editable-type="content" cms-editable-label="Social Heading">Get Social</h2>
+                        <div class="d-inline-flex flex-wrap"> <a href="#" class="link-light p-1" aria-label="facebook link" data-pg-collapsed cms-editable="social_fb" cms-editable-type="link" cms-editable-if cms-editable-label="Facebook"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="twitter link" cms-editable="social_tw" cms-editable-type="link" cms-editable-if cms-editable-label="Twitter"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="instagram link" cms-editable="social_ig" cms-editable-type="link" cms-editable-if cms-editable-label="Instagram"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="linkedin link" cms-editable="social_ln" cms-editable-type="link" cms-editable-if cms-editable-label="LinkedIn"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/> 
+                                </svg> </a> <a href="#" class="link-light p-1" aria-label="youtube link" cms-editable="social_yt" cms-editable-type="link" cms-editable-if cms-editable-label="YouTube"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
+                                    <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/> 
+                                </svg> </a> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+                <div class="pb-3 pt-3 small"> 
+                    <hr class="border-secondary mt-0"/> 
+                    <div class="align-items-center row">
+                        <div class="col-md pb-2 pt-2">
+                            <p class="mb-0">&copy; <span cms-function="current_year" cms-function-type="content">2021</span> | <span cms-editable="copyright" cms-editable-type="content" cms-editable-label="Copyright notice">All Rights Reserved - Company Name</span></p>
+                        </div>
+                        <div class="col-md-auto pb-2 pt-2"><a href="#" class="link-light text-decoration-none" cms-editable="privacy_link" cms-editable-type="link" cms-editable-label="Privacy Policy Link">Privacy Policy</a> | <a href="#" class="link-light text-decoration-none" cms-editable="terms_link" cms-editable-type="link" cms-editable-label="Terms link">Terms of Use</a>
+                        </div>
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>
+        <script src="custom.js" wp-enqueue-script wp-enqueue-script-deps="jquery"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

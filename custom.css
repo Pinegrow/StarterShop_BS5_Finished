@@ -1,0 +1,7 @@
+.woocommerce div.product .stock {
+    color: var(--bs-dark);
+}
+
+.woocommerce div.product .out-of-stock {
+    color: var(--bs-danger);
+}

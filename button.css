@@ -1,0 +1,25 @@
+.woocommerce .add_to_cart_button.loading {
+    position: relative;
+}
+
+.woocommerce .add_to_cart_button.loading::after {
+    font-family: WooCommerce;
+    content: "\e01c";
+    vertical-align: top;
+    font-weight: 400;
+    position: absolute;
+    right: 1em;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.woocommerce .add_to_cart_button.added::after {
+    font-family: WooCommerce;
+    content: "\e017";
+    margin-left: .53em;
+    vertical-align: bottom;
+}
+
+.woocommerce a.added_to_cart {
+    display: block;
+}
